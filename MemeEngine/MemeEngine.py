@@ -2,6 +2,7 @@ from PIL import Image, ImageDraw, ImageFont
 from uuid import uuid4
 from random import randint
 import os
+import textwrap
 
 
 
@@ -39,7 +40,9 @@ class MemeEngine:
 		font = ImageFont.truetype(os.path.abspath('./_data/fonts/CookieCrisp.ttf'), 17)
 		drawImage = ImageDraw.Draw(img)
 
-		drawImage.text(imagePosition, f"{body} - {author}", color=(0, 0, 0), font=font)
+		quote = f"{body} - {author}"
+		textImage = textwrap.fill(quote, width=40)
+		drawImage.text(imagePosition, f"{textImage}", fill=(124,252,0), font=font)
 
 		file_name = f"{uuid4()}.png"
 		path = os.path.join(self.outputDir, file_name)
