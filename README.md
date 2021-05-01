@@ -19,8 +19,9 @@ It has two core modules:
     
 <hr>
 
-#####**Requirements**
-
+##### **Requirements**
+> full list on requirements.txt
+> pip install -r requriements.txt
 - flask
 - request
 - python-docx
@@ -28,4 +29,18 @@ It has two core modules:
 - pandas
 
 <hr>
+
+##### **Run the Program**
+**Flask/Web app method**
+> python app.py
+
+**CLI method**
+> python meme.py
+
+Optional Parameters for CLI
+> --path : path to an image file
+>
+> --body : quote to add to the image
+>
+> --author: the author of the quote
 
