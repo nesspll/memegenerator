@@ -1,10 +1,10 @@
-###**Project: Meme Generator**
+### **Project: Meme Generator**
 
 This small application generates memes based on the images and quotes you provide.
 
 <hr>
 
-#####**Functionality and Architecture**
+##### **Functionality and Architecture**
 
 It has two core modules:
 - **Meme Engine Module:**
